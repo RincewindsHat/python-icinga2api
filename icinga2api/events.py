@@ -33,6 +33,20 @@ from icinga2api.base import Base
 
 LOG = logging.getLogger(__name__)
 
+class EventTypes():
+    CheckResult = "CheckResult"
+    StateChange = "StateChange"
+    Notification= "Notification"
+    AcknowledgementSet = "AcknowledgementSet"
+    AcknowledgementCleared = "AcknowledgementCleared"
+    CommentAdded = "CommentAdded"
+    CommentRemoved = "CommentRemoved"
+    DowntimeAdded = "DowntimeAdded"
+    DowntimeRemoved = "DowntimeRemoved"
+    DowntimeStarted = "DowntimeStarted"
+    DowntimeTriggered = "DowntimeTriggered"
+
+
 
 class Events(Base):
     '''
